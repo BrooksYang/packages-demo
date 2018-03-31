@@ -16,3 +16,18 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Login
+Route::post('auth/login', 'Demo\DemoController@login');
+
+// Register
+Route::post('auth/register', 'Demo\DemoController@register');
+
+// Refresh Token
+Route::post('refresh', 'Demo\DemoController@refresh')->middleware('jwt.auth');
+
+// Test
+Route::post('test', 'Demo\DemoController@test')->middleware('jwt.auth');
+
+// 文件上传测试
+Route::post('file/upload', 'Demo\DemoController@upload')->middleware('jwt.auth');

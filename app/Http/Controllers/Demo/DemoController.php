@@ -79,7 +79,7 @@ class DemoController extends Controller
     }
 
     /**
-     * jwt测试
+     * 用户信息
      *
      * @return string
      */
@@ -101,23 +101,6 @@ class DemoController extends Controller
         JWTAuth::invalidate(JWTAuth::getToken());
 
         return $this->msgResponse('已退出');
-    }
-
-    /**
-     * Twilio短信测试
-     *
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function pushMessage()
-    {
-        $phone = Input::get('number') ?: '+8617603876965'; // 电话号码
-        $response = $this->sendSms($phone, '你好，我是Twilio测试消息');
-
-        if (!$response) {
-            return $this->errorResponse(['code' => 1, 'msg' => '发送失败']);
-        }
-
-        return $this->msgResponse('发送成功');
     }
 
     /**

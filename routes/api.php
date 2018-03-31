@@ -31,3 +31,6 @@ Route::post('test', 'Demo\DemoController@test')->middleware('jwt.auth');
 
 // 文件上传测试
 Route::post('file/upload', 'Demo\DemoController@upload')->middleware('jwt.auth');
+
+// 另一个模块
+Route::resource('another', 'AnotherModule\TestController', ['only' => ['index', 'create', 'store']]);

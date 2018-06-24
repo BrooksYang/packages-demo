@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9864dba92b4a522c3c733fa85ffec794",
+    "content-hash": "be4140d26bf9697010ad76239a9f89c8",
     "packages": [
         {
             "name": "brooksyang/laravel-api-helper",
-            "version": "v1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BrooksYang/laravel-api-helper.git",
-                "reference": "6f316e3c1683daae41cc9273cdc60e53656bbdd8"
+                "reference": "eb8953d973f3dafdb35834cdcf76580fd0613486"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/BrooksYang/laravel-api-helper/6f316e3c1683daae41cc9273cdc60e53656bbdd8.zip",
-                "reference": "6f316e3c1683daae41cc9273cdc60e53656bbdd8",
+                "url": "https://files.phpcomposer.com/files/BrooksYang/laravel-api-helper/eb8953d973f3dafdb35834cdcf76580fd0613486.zip",
+                "reference": "eb8953d973f3dafdb35834cdcf76580fd0613486",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 }
             ],
             "description": "Api doc generator for laravel 5",
-            "time": "2018-06-24T06:29:16+00:00"
+            "time": "2018-06-24T07:07:58+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
